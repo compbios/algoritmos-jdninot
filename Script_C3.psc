@@ -32,3 +32,24 @@ Algoritmo conversor_moneda
 	//regrese al usuario el resultado, sea creativo en su respuesta
 	Escribir "Su conversion a pesos COP es: ", pesos
 FinAlgoritmo
+
+Algoritmo DescuentoIVA
+	
+    // Definir las variables
+    Definir precio_articulo, precio_base, descuento, precio_final Como Real
+    // Solicitar el valor del artículo incluyendo el IVA del 16%
+    Escribir("Ingrese el valor del artículo con IVA: ")
+    Leer precio_articulo
+    // Calcular el precio base VB = V_IVA/(1+IVA)
+    precio_base = precio_articulo / 1.16
+    // Calcular el descuento del 25%
+    descuento = precio_base * 0.25
+    // Calcular el precio final con descuento y añadir el IVA: VBD + VBD*IVA = VBDIVA
+    precio_final = (precio_base - descuento) + (precio_base - descuento) * 0.16
+    //regrese el precio base y el descuento en pesos
+    Escribir "Precio base del artículo: ", precio_base
+    Escribir "Descuento del 25%: ", descuento
+    // Resultados: regrese el precio final a pagar (debe incluir el impuesto de IVA)
+    Escribir "Precio final a pagar (con IVA): ", precio_final
+	
+FinAlgoritmo
