@@ -53,3 +53,20 @@ Algoritmo DescuentoIVA
     Escribir "Precio final a pagar (con IVA): ", precio_final
 	
 FinAlgoritmo
+
+Algoritmo semana_algoritmo
+	// Definir las variables
+	Definir semana Como Caracter
+	// Definir la Dimension de las variables
+	Dimension semana[7]
+	Semana[1] = ["Lunes"]
+	Semana[2] = ["Martes"]
+	Semana[3] = ["Miercoles"]
+	Semana[4] = ["Jueves"]
+	Semana[5] = ["Viernes"]
+	Semana[6] = ["Sabado"]
+	Semana[7] = ["Domingo"]
+	// Mostrar resultados
+	Escribir semana[1+azar(7)]
+FinAlgoritmo
+
