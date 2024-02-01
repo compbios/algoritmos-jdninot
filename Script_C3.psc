@@ -34,7 +34,6 @@ Algoritmo conversor_moneda
 FinAlgoritmo
 
 Algoritmo DescuentoIVA
-	
     // Definir las variables
     Definir precio_articulo, precio_base, descuento, precio_final Como Real
     // Solicitar el valor del artículo incluyendo el IVA del 16%
@@ -51,7 +50,6 @@ Algoritmo DescuentoIVA
     Escribir "Descuento del 25%: ", descuento
     // Resultados: regrese el precio final a pagar (debe incluir el impuesto de IVA)
     Escribir "Precio final a pagar (con IVA): ", precio_final
-	
 FinAlgoritmo
 
 Algoritmo semana_algoritmo
