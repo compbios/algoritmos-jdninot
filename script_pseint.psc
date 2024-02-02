@@ -68,3 +68,47 @@ Algoritmo semana_algoritmo
 	Escribir semana[1+azar(7)]
 FinAlgoritmo
 
+Algoritmo tabla_algoritmo
+	// Definir el objeto arreglos
+	Definir tabla Como Entero
+	// Definir la Dimension de los arreglos
+	Dimension tabla[5,4]
+	tabla[1, 1] = 1
+	tabla[2, 1] = 2
+	tabla[3, 1] = 3
+	tabla[4, 1] = 4
+	tabla[5, 1] = 5
+	tabla[1, 2] = 5
+	tabla[2, 2] = 10
+	tabla[3, 2] = 6
+	tabla[4, 2] = 11
+	tabla[5, 2] = 14
+	tabla[1, 3] = 30
+	tabla[2, 3] = 73
+	tabla[3, 3] = 40
+	tabla[4, 3] = 47
+	tabla[5, 3] = 82
+	tabla[1, 4] = 0
+	tabla[2, 4] = 0
+	tabla[3, 4] = 1
+	tabla[4, 4] = 1
+	tabla[5, 4] = 1
+	// ID por Paciente
+	Escribir "El paciente con el ID:", " ", tabla[1,1], " tiene la edad de: ", tabla[1,3], " años"
+	Escribir "El paciente con el ID:", " ", tabla[2,1], " tiene la edad de: ", tabla[2,3], " años"
+	Escribir "El paciente con el ID:", " ", tabla[3,1], " tiene la edad de: ", tabla[3,3], " años"
+	Escribir "El paciente con el ID:", " ", tabla[4,1], " tiene la edad de: ", tabla[4,3], " años"
+	Escribir "El paciente con el ID:", " ", tabla[5,1], " tiene la edad de: ", tabla[5,3], " años"
+        promedio = (tabla[1, 3] + tabla[2, 3] + tabla[3, 3] + tabla[4, 3] + tabla[5, 3]) / 5
+	// Promedio de la edad de los pacientes
+	Escribir "El promedio de la edad de los pacientes es: " promedio, " años"
+	porcentaje_mujeres = (tabla[1, 4] + tabla[2, 4] + tabla[3, 4] + tabla[4, 4] + tabla[5, 4]) * 100 / 5
+	// Promedio de las mujeres
+	Escribir "El procentaje de las mujeres es: " porcentaje_mujeres, " %"
+	// Promedio de estancia de mujeres
+	porcentaje_mujeres_estancia = (tabla[1, 4] * tabla[1, 2] + tabla[2, 4] * tabla[2, 2] + tabla[3, 4] * tabla[3, 2] + tabla[4, 4] * tabla[4, 2] + tabla[5, 4] * tabla[5, 2]) / 3
+	Escribir "El promedio de estancia de mujeres es: " porcentaje_mujeres_estancia
+	// Promedio de estancia de hombres
+	porcentaje_hombres = (-((tabla[1, 4]-1) + (tabla[2, 4]-1) + (tabla[3, 4]-1) + (tabla[4, 4]-1) + (tabla[5, 4]-1)) * 100 )/5
+	Escribir "El procentaje de los hombres es: " porcentaje_hombres, " %"
+FinAlgoritmo
