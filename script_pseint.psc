@@ -133,3 +133,29 @@ Algoritmo numeros_aleatorios_algoritmo
 	Escribir num_aleatorio[2]
 FinAlgoritmo
 
+Algoritmo notas_algoritmo
+	// Definir las variables
+	Definir notas Como Entero
+	// Definir la Dimension de las variables
+	Dimension notas[5]
+	// Ingresar manualmente las 5 notas
+    Escribir("Ingrese la nota 1 (entre 0 y 5): ")
+    Leer notas[1]
+	Escribir("Ingrese la nota 2 (entre 0 y 5): ")
+    Leer notas[2]
+	Escribir("Ingrese la nota 3 (entre 0 y 5): ")
+    Leer notas[3]
+	Escribir("Ingrese la nota 4 (entre 0 y 5): ")
+    Leer notas[4]
+	Escribir("Ingrese la nota 5 (entre 0 y 5): ")
+    Leer notas[5]
+	// Calculo del promedio
+	Promedio = (notas[1] + notas[2] + notas[3] + notas[4] + notas[5]) / 5 
+	// Imprimir las notas y el promedio
+    Escribir "Nota 1: ", notas[1]
+    Escribir "Nota 2: ", notas[2] 
+    Escribir "Nota 3: ", notas[3] 
+    Escribir "Nota 4: ", notas[4] 
+    Escribir "Nota 5: ", notas[5] 
+    Escribir "Promedio de notas: ", promedio
+FinAlgoritmo
