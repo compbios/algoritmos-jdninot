@@ -243,3 +243,12 @@ Algoritmo tienda
 	Escribir "Precio a pagar es: $" val_libro
 FinAlgoritmo
 
+Algoritmo notas_algoritmo
+	Definir val Como Real
+	Dimension val[5]
+	// Ingresar manualmente las 5 notas
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir "Ingrese el valor ", i
+		Leer val[i]
+	Fin Para
+FinAlgoritmo
