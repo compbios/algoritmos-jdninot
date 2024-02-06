@@ -159,3 +159,87 @@ Algoritmo notas_algoritmo
     Escribir "Nota 5: ", notas[5] 
     Escribir "Promedio de notas: ", promedio
 FinAlgoritmo
+
+Algoritmo valor_absoluto
+	Definir val Como Real
+	// Ingresar numeros
+    Escribir("Ingrese un número")
+	Leer val
+	Si val < 0 Entonces
+		val = -1 * val
+	Fin Si
+    Escribir "El valor absoluto es: " val
+FinAlgoritmo
+
+Algoritmo verificacion
+	Definir val Como Real
+	// Ingresar numeros
+    Escribir("Ingrese un número")
+	Leer val
+	// Condicional si es negativo o positivo
+	Si val < 0 Entonces
+		Escribir "El valor es negativo"
+	SiNo
+		Escribir "El valor es positivo"
+	Fin Si
+FinAlgoritmo
+
+Algoritmo verificacion
+	Definir val Como Real
+	// Ingresar numeros
+    Escribir("Ingrese un número")
+	Leer val
+	// Condicional si es negativo o positivo
+	Si val < 0 Entonces
+		Escribir "El valor es negativo"
+	SiNo
+		Escribir "El valor es positivo"
+	Fin Si
+FinAlgoritmo
+
+Algoritmo bisiesto
+	Definir year Como Real
+	// Ingresar numeros
+    Escribir("Ingrese un año")
+	Leer year
+	// Cadena de condicionales 
+	Si (year mod 100 == 0) Y (year mod 400 <> 0) Entonces
+		Escribir("No es un año biesto")
+	SiNo
+		Si (year mod 4 == 0) Entonces
+			Escribir("Es un año biesto")
+		SiNo
+			Escribir("No es un año biesto")
+		Fin Si
+	Fin Si
+FinAlgoritmo
+
+Algoritmo tienda
+	Definir val_libro Como Real
+	Definir mes Como Entero
+	Definir descuento Como Caracter
+	// Ingresar el precio
+    Escribir("Ingrese el precio del libro")
+	Leer val_libro
+	// Ingresar el mes
+	Escribir("Ingrese el mes del año en números")
+	Leer mes
+	// Cadena de condicionales 
+	Segun mes Hacer
+		2:
+			val_libro = val_libro - val_libro * 0.25
+			descuento = "25%"
+		7:
+			val_libro = val_libro - val_libro * 0.15
+			descuento = "15%"
+		10:
+			val_libro = val_libro - val_libro * 0.20
+			descuento = "20%"
+		De Otro Modo:
+			val_libro = val_libro - val_libro * 0
+			descuento = "0%"
+	Fin Segun
+	Escribir "Procentaje aplicado es: " descuento
+	Escribir "Precio a pagar es: $" val_libro
+FinAlgoritmo
+
