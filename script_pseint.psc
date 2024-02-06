@@ -112,3 +112,23 @@ Algoritmo tabla_algoritmo
 	porcentaje_hombres = (-((tabla[1, 4]-1) + (tabla[2, 4]-1) + (tabla[3, 4]-1) + (tabla[4, 4]-1) + (tabla[5, 4]-1)) * 100 )/5
 	Escribir "El procentaje de los hombres es: " porcentaje_hombres, " %"
 FinAlgoritmo
+
+Algoritmo numeros_aleatorios_algoritmo
+	// Definir las variables
+	Definir num_aleatorio Como Entero
+	// Definir la Dimension de las variables
+	Dimension num_aleatorio[10]
+	num_aleatorio[1] = aleatorio(1, 10)
+	num_aleatorio[2] = aleatorio(1, 10)
+	num_aleatorio[3] = aleatorio(1, 10)
+	num_aleatorio[4] = aleatorio(1, 10)
+	num_aleatorio[5] = aleatorio(1, 10)
+	num_aleatorio[6] = aleatorio(1, 10)
+	num_aleatorio[7] = aleatorio(1, 10)
+	num_aleatorio[8] = aleatorio(1, 10)
+	num_aleatorio[9] = aleatorio(1, 10)
+	num_aleatorio[10] = aleatorio(1, 10)
+	// Mostrar resultados
+	Escribir num_aleatorio[2]
+FinAlgoritmo
+
