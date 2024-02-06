@@ -118,6 +118,7 @@ Algoritmo numeros_aleatorios_algoritmo
 	Definir num_aleatorio Como Entero
 	// Definir la Dimension de las variables
 	Dimension num_aleatorio[10]
+	// Vector aletorio
 	num_aleatorio[1] = aleatorio(1, 10)
 	num_aleatorio[2] = aleatorio(1, 10)
 	num_aleatorio[3] = aleatorio(1, 10)
