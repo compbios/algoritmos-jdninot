@@ -272,3 +272,19 @@ Algoritmo PromedioAlgoritmo
     promedio <- suma / 5
     Escribir "El promedio de las notas es: ", promedio
 Fin Algoritmo
+
+Algoritmo AdivinarAlgoritmo
+	Definir secreto, usuario, intentos Como Entero
+	secreto <- 1+azar(10)
+	Escribir "*** Adivine el número secreto ***"
+	Escribir "Ingrese un número de 1 a 10"
+	Leer usuario
+	intentos <- 1
+	Mientras secreto <> usuario Hacer
+		Escribir "Sigue intentando"
+		Escribir "Ingrese otro número de 1 a 10"
+		Leer usuario
+		intentos = intentos + 1
+	Fin Mientras
+	Escribir "Ganaste en ", intentos, " intentos	"
+Fin Algoritmo
