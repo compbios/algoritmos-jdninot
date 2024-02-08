@@ -252,3 +252,23 @@ Algoritmo notas_algoritmo
 		Leer val[i]
 	Fin Para
 FinAlgoritmo
+
+Algoritmo PromedioAlgoritmo
+	// Definir mis espacios
+    Definir notas, suma, promedio Como Real
+	Definir i Como Entero
+	// Definir las dimensiones de nuestro obejtos
+	Dimension notas[5]
+	// Pedir que ingresen las respectivas notas
+    Para i<-1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Ingrese la nota ", i, ": "
+        Leer notas[i]
+        suma <- suma + notas[i]
+    Fin Para
+    Escribir "Las notas que se ingresaron son:"
+    Para i<-1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Nota ", i, ": ", notas[i]
+    Fin Para
+    promedio <- suma / 5
+    Escribir "El promedio de las notas es: ", promedio
+Fin Algoritmo
