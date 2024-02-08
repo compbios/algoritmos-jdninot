@@ -306,3 +306,52 @@ Algoritmo CasinoAlgoritmo
 		Leer X
 	Hasta Que dado >= 5
 Fin Algoritmo
+
+//función que ordena los elementos de un vector de menor a mayor
+Funcion ordenar(vector)
+	Para i = 1 Hasta 5 Con Paso 1 Hacer
+		Para j = 1 Hasta 5 Con Paso 1 Hacer
+			Si vector[i] < vector[j] Entonces
+				temp <- vector[i]
+				vector[i] <- vector[j]
+				vector[j] <- temp
+			Fin Si
+		Fin para
+	Fin Para
+Fin Funcion
+
+//Crear función promedio
+Funcion media <- promedio(vector)
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		suma = suma + vector[i]
+	Fin Para
+	media <- suma / 5
+Fin Funcion
+//Crear función desviación estándar
+Funcion  sd <- destander(vector)
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		suma = suma + (vector[i] - promedio(vector))^2
+	Fin Para
+	sd <- raiz(suma/4)
+Fin Funcion
+//Crear función mediana
+
+Algoritmo calculadora
+	Definir x Como Real
+	Dimension x[5]
+	//leer los 5 números
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir "Ingresar el valor ", i
+		Leer x[i]
+	Fin Para
+	Escribir "Menu: Escribe 1: Si desea la media, Escribe 2: si desea la desviacion estandar"
+	Leer menu
+	Segun menu Hacer
+		1:
+			Escribir "La media de los datos es: ", promedio(x)
+		2:
+			Escribir "La desviacion estandar de los datos es: ", destander(x)
+		De Otro Modo:
+			Escribir "Hasta luego"
+	Fin Segun
+FinAlgoritmo
