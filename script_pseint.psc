@@ -293,3 +293,16 @@ Algoritmo AdivinarAlgoritmo
 	Fin Mientras
 	Escribir "Ganaste en ", intentos, " intentos	"
 Fin Algoritmo
+
+Algoritmo CasinoAlgoritmo 
+	// Casinos
+	Definir dado Como Entero
+	Escribir "*** Bienvenido al azar ***"
+	Escribir "Debe lanzar un dado hasta que el resultado sea 5 o mas"
+	Repetir
+		dado <- azar(6) + 1
+		contador = contador + 1
+		Escribir "Lanzamiento: ", contador, " resultado: ", dado
+		Leer X
+	Hasta Que dado >= 5
+Fin Algoritmo
