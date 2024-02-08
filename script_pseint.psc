@@ -1,4 +1,5 @@
 Algoritmo saludo
+	// Saludo
 	// defina las variables de tipo "texto"
 	Definir nombre, apellido, ncompleto Como Caracter
 	// asigne las cadenas de texto a las correspondientes constantes
@@ -17,6 +18,7 @@ FinAlgoritmo
  
  
 Algoritmo conversor_moneda
+	// Convertir divisas
 	//declare dos variables que almacenen el monto en dólares
 	//a convertir y el resultado de la operación
 	Definir dolares, pesos Como Real
@@ -34,6 +36,7 @@ Algoritmo conversor_moneda
 FinAlgoritmo
 
 Algoritmo DescuentoIVA
+    // Descuento IVA
     // Definir las variables
     Definir precio_articulo, precio_base, descuento, precio_final Como Real
     // Solicitar el valor del artículo incluyendo el IVA del 16%
@@ -114,6 +117,7 @@ Algoritmo tabla_algoritmo
 FinAlgoritmo
 
 Algoritmo numeros_aleatorios_algoritmo
+        // Numeros aleatorios
 	// Definir las variables
 	Definir num_aleatorio Como Entero
 	// Definir la Dimension de las variables
@@ -273,7 +277,8 @@ Algoritmo PromedioAlgoritmo
     Escribir "El promedio de las notas es: ", promedio
 Fin Algoritmo
 
-Algoritmo AdivinarAlgoritmo
+Algoritmo AdivinarAlgoritmo 
+	// Intentos y adivinar
 	Definir secreto, usuario, intentos Como Entero
 	secreto <- 1+azar(10)
 	Escribir "*** Adivine el número secreto ***"
